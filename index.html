@@ -6,18 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
+        :root {
+            --red: #eb4040;
+            --red-shadow: #f57373;
+        }
+
         h1 {
             font-size: 2rem;
             color: blue;
             font-weight: bold;
-            text-align: center;
+        }
+
+        button {
+            padding: .5rem 2rem;
+            border: 1px solid var(--red);
+            background-color: transparent;
+            color: var(--red);
+            transition: all .1s linear;
+            cursor: pointer;
+            border-radius: .4rem;
+        }
+
+        button:hover {
+            color: white;
+            font: bold;
+            background-color: var(--red);
+            box-shadow: 0px 3px 6px var(--red-shadow);
+        }
+
+        .wrapper {
+            max-width: 40%;
+            align-items: start;
+            margin: auto;
+            flex-direction: column;
+            display: flex;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>My portfolio</h1>
+    <div class="wrapper">
+        <h1>My portfolio</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum magnam quis deserunt quam non corporis illo?
+            Soluta facere laboriosam aliquam adipisci beatae voluptate similique nulla tenetur aperiam magnam! Minima
+            quia
+            ducimus error dignissimos perferendis dolore?
+        </p>
+        <button>Interest</button>
+    </div>
 
 </body>
 
